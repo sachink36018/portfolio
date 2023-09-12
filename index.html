@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Port</span>folio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sachin</span><br>Kumar from Jharkhand</h1>
+                <p class="summary">I am a passionate and skilled front end web developer with a <br>strong background in creating visually appealing and <br>user-friendly websites.</p>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="row container">
+            <div class="about-img">
+                <img src="Image/sachin2.jpg">
+            </div>
+            <div class="about-col">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am proficient in HTML, CSS, JavaScript, and various front end frameworks, and I am always eager to learn and adapt to new technologies.</p>
+
+                <div class="tab-title">
+                    <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML5</span><br>Proficient in writing clean and semantic HTML markup to structure web pages effectively.</li>
+                        <li><span>CSS3</span><br>Strong knowledge of CSS, including flexbox, grid, animations, and media queries for responsive design.</li>
+                        <li><span>JavaScript</span><br>Experience in writing JavaScript code to enhance user interactions and create dynamic web elements.</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2022-25</span><br>Pursung BCA from Quantum University</li>
+                        <li><span>2021-22</span><br>12th from Chas College, Chas</li>
+                        <li><span>2020</span><br>10th from Dayanand Adarsh Vidalaya, Koria</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Virtual Internship from Code Casa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design and Development</h2>
+                    <p>Clean and semantic HTML markup along with CSS styling to create visually appealing and user-friendly interfaces.</p>
+                    <a href="#">learn more..</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Responsive Web Developmen</h2>
+                    <p>Development of mobile-first and responsive websites that adapt seamlessly to different screen sizes and devices.</p>
+                    <a href="#">learn more..</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2> UI/UX Design</h2>
+                    <p>Collaboration on user interface and user experience design to create intuitive and visually appealing web interfaces.</p>
+                    <a href="#">learn more..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Image/work.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p>You can Play tic-tac-toe game. click to Play.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/work.png">
+                    <div class="layer">
+                        <h3>Weather</h3>
+                        <p>You can check weather of any area.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/work.png">
+                    <div class="layer">
+                        <h3>To-do-List</h3>
+                        <p>You can list your item.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sachink36018@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9142764327</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-rigth">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="xyz@gmail.com" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sachin. Made With <i class="fas fa-heart"></i> by Sachin Kumar</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script></script>
+</body>
+</html>
